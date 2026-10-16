@@ -4,7 +4,7 @@ Landing responsiva y función serverless para enviar el formulario de contacto p
 
 ## Deploy en Vercel
 
-Importá este repositorio desde Vercel. Si los archivos están dentro de `outputs/nodo-sistemas`, elegí esa carpeta como **Root Directory**. Seleccioná **Other** como framework y dejá vacíos los comandos de build y el output directory. Vercel publica `index.html` y detecta `api/contact.js` como función.
+Importá `agusfoglia1/landing` desde Vercel. Los archivos están en la raíz del repositorio: dejá **Root Directory** en `./`. Seleccioná **Other** como framework y dejá vacíos los comandos de build y el output directory. Vercel publica `index.html` y detecta `api/contact.js` como función.
 
 ## Configurar email
 
