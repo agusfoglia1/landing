@@ -59,6 +59,34 @@
   @keyframes field-arrive{from{opacity:.35;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
   @media(max-width:620px){.hero-line{white-space:normal}.service.reveal:nth-child(n){transition-delay:0s}.service.reveal:nth-child(2n){transition-delay:.08s}.cards .card:nth-child(n){transition-delay:0s}}
   @media(prefers-reduced-motion:reduce){.hero-line>span{opacity:1;transform:none;animation:none}.art:after,.code,.chip.one,.chip.two,.live:before{animation:none}.art:before{transform:none}.form.visible .field{animation:none}.reveal,.reveal.visible{opacity:1;transform:none;transition:none}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+  /* Etapa 1: escala tipográfica, contraste y áreas táctiles */
+  @font-face{font-family:'Nodo';src:url('./fonts/Nodo.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap}
+  :root{--serif:'Nodo','Newsreader',Georgia,serif;--muted:#53636d;--focus:#45657b}
+  body{font-size:18px;line-height:1.6}
+  .hero h1{font-size:clamp(72px,6.2vw,96px);line-height:.98}
+  .title{font-size:clamp(48px,4.5vw,64px);line-height:1.04}
+  .intro{font-size:19px;line-height:1.6;max-width:58ch}
+  .desc{font-size:18px;line-height:1.6;max-width:58ch}
+  .info p,.service p,.aboutcopy,.step p,.contactcopy{font-size:18px;line-height:1.6}
+  .info p{max-width:62ch}.aboutcopy{max-width:66ch}.step p{max-width:34ch}
+  .stripe p{font-size:16px;line-height:1.6;max-width:38ch}
+  .trustnote{font-size:14px}.trustitem{font-size:14px}.trustitem small{font-size:12px}
+  .eyebrow{font-size:11px}.links{font-size:12px}.brand{font-size:16px}.brand small{font-size:12px}
+  .navcta{font-size:14px;min-height:44px}.links a:not(.navcta){min-height:44px;display:inline-flex;align-items:center}
+  .btn{font-size:15px;min-height:48px;padding:13px 19px}
+  .filter{font-size:12px;min-height:44px;padding:9px 14px}
+  .meta{font-size:10px}.meta span:last-child{font-size:10px}.tags span,.pills span{font-size:11px}
+  .info h3{font-size:26px}.service{min-height:190px}.service small,.step small{font-size:11px}.service h3{font-size:25px}.step h3{font-size:23px}
+  .form h3{font-size:27px}.field label{font-size:12px}.field input,.field select,.field textarea{font-size:16px;min-height:48px}.field textarea{min-height:120px}.note,.statusmsg{font-size:13px}
+  .email{font-size:16px;min-height:44px;display:inline-flex;align-items:center}
+  .footlinks{font-size:11px}.footlinks a{min-height:44px;display:inline-flex;align-items:center}.social a{width:44px;height:44px;font-size:11px}
+  .copyright{font-size:11px;line-height:1.6}
+  .menu{min-width:44px;min-height:44px;place-items:center}.mark{width:36px;height:36px}
+  .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--focus);box-shadow:0 0 0 4px #45657b24}
+  a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-color:var(--focus)}
+  @media(max-width:800px){.hero h1{font-size:clamp(54px,8.2vw,68px)}.title{font-size:clamp(44px,6.4vw,54px)}.intro,.desc,.info p,.service p,.aboutcopy,.step p,.contactcopy{font-size:17px}.service{min-height:180px}.links{font-size:11px}}
+  @media(max-width:620px){.hero h1{font-size:clamp(46px,12.2vw,58px)}.title{font-size:clamp(40px,10vw,48px)}.intro,.desc,.info p,.service p,.aboutcopy,.step p,.contactcopy{font-size:17px}.service{min-height:170px}.brand{font-size:15px}.brand small{font-size:11px}.footlinks{font-size:11px}.copyright{font-size:10px}.row{gap:6px}}
   </style>
 </head>
 <body>
