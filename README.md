@@ -16,4 +16,4 @@ El formulario usa [Resend](https://resend.com) para entregar las consultas. Cre�
 
 Volvé a desplegar después de agregar las variables. La ruta del endpoint es `POST /api/contact`. Valida datos en servidor y usa un honeypot básico contra bots. Para desarrollo local, ejecutá `vercel dev` desde la carpeta del proyecto.
 
-Antes de publicar, reemplazá el correo visible `contacto@nodosistemas.com`, los enlaces sociales de muestra y las previews conceptuales por los datos definitivos del equipo. La referencia no incluye un archivo de la fuente Nodo, así que los títulos usan Newsreader como aproximación editorial.
+Las previews se identifican como conceptos y no atribuyen clientes, tecnologías implementadas ni resultados. No se publican redes sociales ni un email que no se haya verificado. El formulario informa que el envío depende de la configuración de Resend. La referencia no incluye un archivo de la fuente Nodo; la página deja preparado el `@font-face` y usa Newsreader como fallback editorial.
